@@ -1,6 +1,6 @@
-SRC=nbody.c
+SRC=nbody.cpp
 EXE=nbody
-icx -fsycl -std=c99 -O3 -fopenmp -DSHMOO -o $EXE $SRC -lm
+icpx -fsycl -std=c++17 -O3 -DSHMOO -o $EXE $SRC -lm
 
 echo $EXE
 
